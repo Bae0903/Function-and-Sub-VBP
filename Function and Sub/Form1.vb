@@ -26,7 +26,7 @@
         lblText3.Text = S3()
     End Sub
 
-    Private Function S4(ByVal strText2 As String)
+    Private Function S4(ByRef strText2 As String)
         Return "Hello " & strText2
     End Function
 
