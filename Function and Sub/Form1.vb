@@ -30,7 +30,8 @@
     End Function
 
     Private Sub btnSubmit4_Click(sender As Object, e As EventArgs) Handles btnSubmit4.Click
-        lblText4.Text = S4(txtBox2.Text)
+        Dim strText2 As String = txtBox2.Text
+        lblText4.Text = S4(strText2)
     End Sub
 
 End Class
