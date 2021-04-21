@@ -7,13 +7,11 @@
         S1()
     End Sub
 
-    Private Sub S2()
-        Dim strText As String
-        strText = txtBox1.Text
+    Private Sub S2(ByVal strText As String)
         lblText2.Text = strText
     End Sub
     Private Sub btnSubmit2_Click(sender As Object, e As EventArgs) Handles btnSubmit2.Click
-        S2()
+        S2(txtBox1.Text)
     End Sub
 
     Private Function S3()
@@ -23,12 +21,11 @@
         lblText3.Text = S3()
     End Sub
 
-    Private Function S4()
-        Dim strText2 As String
-        strText2 = txtBox2.Text
+    Private Function S4(ByVal strText2 As String)
         Return strText2
     End Function
     Private Sub btnSubmit4_Click(sender As Object, e As EventArgs) Handles btnSubmit4.Click
-        lblText4.Text=S4()
+        lblText4.Text = S4(txtBox2.Text)
     End Sub
+
 End Class
