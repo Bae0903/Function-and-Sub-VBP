@@ -9,12 +9,13 @@
     End Sub
 
     Private Sub S2(ByVal strText As String)
-        lblText2.Text = strText
+        strText = "Hello" & strText
     End Sub
 
     Private Sub btnSubmit2_Click(sender As Object, e As EventArgs) Handles btnSubmit2.Click
         Dim strText As String = txtBox1.Text
         S2(strText)
+        lblText2.Text = strText
     End Sub
 
     Private Function S3()
