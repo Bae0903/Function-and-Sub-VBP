@@ -13,7 +13,8 @@
     End Sub
 
     Private Sub btnSubmit2_Click(sender As Object, e As EventArgs) Handles btnSubmit2.Click
-        S2(txtBox1.Text)
+        Dim strText As String = txtBox1.Text
+        S2(strText)
     End Sub
 
     Private Function S3()
