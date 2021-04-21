@@ -8,7 +8,7 @@
         S1()
     End Sub
 
-    Private Sub S2(ByVal strText As String)
+    Private Sub S2(ByRef strText As String)
         strText = "Hello" & strText
     End Sub
 
